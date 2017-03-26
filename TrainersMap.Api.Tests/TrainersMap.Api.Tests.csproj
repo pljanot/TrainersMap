@@ -102,9 +102,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TrainersMap\TrainersMap.csproj">
-      <Project>{2BCCFF92-2323-40BB-8AE4-20A7C2AF4FC4}</Project>
-      <Name>TrainersMap</Name>
+    <ProjectReference Include="..\TrainersMap.Api\TrainersMap.Api.csproj">
+      <Project>{42DDEFD1-E366-436A-B9FC-EA86C1F89B15}</Project>
+      <Name>TrainersMap.Api</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

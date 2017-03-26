@@ -1,6 +1,5 @@
 ﻿using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TrainersMap;
 using TrainersMap.Controllers;
 
 namespace TrainersMap.Api.Tests.Controllers
