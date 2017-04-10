@@ -198,3 +198,4 @@ reports/MONNARI-TRADE/Bilans.html
 reports/MONNARI-TRADE/RZiS.html
 .vs/*
 Web_FinancialDataAnalyzer/App_Data/FDA.txt
+TrainersMap.Api/Properties/PublishProfiles/preprod.trainersmap.com - Web Deploy.pubxml
