@@ -3,8 +3,15 @@ using System.Web.Http;
 
 namespace TrainersMap.Api.Controllers
 {
+    [RoutePrefix("api/values")]
     public class ValuesController : ApiController
     {
+        [HttpGet]
+        [Route("version")]
+        public string ApiVersion()
+        {
+            return "0.1";
+        }
         // GET api/values
         public IEnumerable<string> Get()
         {
@@ -12,9 +19,13 @@ namespace TrainersMap.Api.Controllers
         }
 
         // GET api/values/5
-        public string Get(int id)
+        public IHttpActionResult Get(int id)
         {
-            return "value";
+            if (id < 0)
+            {
+                return NotFound();
+            }
+            return Ok("value");
         }
 
         // POST api/values
