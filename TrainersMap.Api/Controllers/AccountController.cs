@@ -6,18 +6,17 @@ using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
-using System.Web.Http.ModelBinding;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
+using TrainersMap.Api.Providers;
+using TrainersMap.Api.Results;
 using TrainersMap.Models;
-using TrainersMap.Providers;
-using TrainersMap.Results;
 
-namespace TrainersMap.Controllers
+namespace TrainersMap.Api.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
@@ -62,7 +61,7 @@ namespace TrainersMap.Controllers
             {
                 Email = User.Identity.GetUserName(),
                 HasRegistered = externalLogin == null,
-                LoginProvider = externalLogin != null ? externalLogin.LoginProvider : null
+                LoginProvider = externalLogin?.LoginProvider
             };
         }
 
