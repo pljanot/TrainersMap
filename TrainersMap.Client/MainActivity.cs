@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Android.App;
 using Android.Widget;
 using Android.OS;
 using RestSharp;
+using TrainersMap.RestClient;
 
 namespace TrainersMap.Client
 {
@@ -10,7 +12,6 @@ namespace TrainersMap.Client
     public class MainActivity : Activity
     {
         int count = 1;
-        private string _apiHost = "http://www.preprod.trainersmap.com.hostingasp.pl/";
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -27,10 +28,8 @@ namespace TrainersMap.Client
 
         private void OperateOnButton(Button button)
         {
-            var client = new RestClient(_apiHost);
-            var request = new RestRequest("api/values/version", Method.GET);
-            IRestResponse response = client.Execute(request);
-            button.Text = $"Trainers.Map Api Version = {response.Content}";
+            TrainersMapRestClient trainersMapRestClient = new TrainersMapRestClient();
+            button.Text = trainersMapRestClient.GetVersion().Result;
         }
     }
 }

@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainersMap.Api.Tests", "TrainersMap.Api.Tests\TrainersMap.Api.Tests.csproj", "{E04E6052-4942-4CB2-B610-ACCC658C162C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainersMap.Api", "TrainersMap.Api\TrainersMap.Api.csproj", "{42DDEFD1-E366-436A-B9FC-EA86C1F89B15}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainersMap.Client", "TrainersMap.Client\TrainersMap.Client.csproj", "{A69E078A-9423-41FB-A9B6-652C993E7805}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainersMap.RestClient", "TrainersMap.RestClient\TrainersMap.RestClient.csproj", "{564C1F13-700A-45A9-AA7B-D00A09600269}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{A69E078A-9423-41FB-A9B6-652C993E7805}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A69E078A-9423-41FB-A9B6-652C993E7805}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A69E078A-9423-41FB-A9B6-652C993E7805}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{564C1F13-700A-45A9-AA7B-D00A09600269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564C1F13-700A-45A9-AA7B-D00A09600269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564C1F13-700A-45A9-AA7B-D00A09600269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564C1F13-700A-45A9-AA7B-D00A09600269}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
