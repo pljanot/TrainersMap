@@ -1,7 +1,6 @@
 ﻿using System.Web.Mvc;
 using TrainersMap.Api.Controllers;
 using Xunit;
-using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace TrainersMap.Api.Tests.Controllers
 {
@@ -17,8 +16,8 @@ namespace TrainersMap.Api.Tests.Controllers
             ViewResult result = controller.Index() as ViewResult;
 
             // Assert
-            Assert.IsNotNull(result);
-            Assert.AreEqual("Home Page", result.ViewBag.Title);
+            Assert.NotNull(result);
+            Assert.Equal("Home Page", result.ViewBag.Title);
         }
     }
 }
