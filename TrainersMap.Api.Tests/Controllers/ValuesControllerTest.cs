@@ -3,13 +3,14 @@ using System.Linq;
 using System.Web.Http.Results;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TrainersMap.Api.Controllers;
+using Xunit;
+using Assert = Microsoft.VisualStudio.TestTools.UnitTesting.Assert;
 
 namespace TrainersMap.Api.Tests.Controllers
 {
-    [TestClass]
     public class ValuesControllerTest
     {
-        [TestMethod]
+        [Fact]
         public void Get()
         {
             // Arrange
@@ -21,7 +22,7 @@ namespace TrainersMap.Api.Tests.Controllers
             Assert.AreEqual("value2", result.ElementAt(1));
         }
 
-        [TestMethod]
+        [Fact]
         public void GetById()
         {
             ValuesController controller = new ValuesController();
@@ -30,7 +31,7 @@ namespace TrainersMap.Api.Tests.Controllers
             Assert.AreEqual("value", conNegResult.Content);
         }
 
-        [TestMethod]
+        [Fact]
         public void Post()
         {
             // Arrange
@@ -42,7 +43,7 @@ namespace TrainersMap.Api.Tests.Controllers
             // Assert
         }
 
-        [TestMethod]
+        [Fact]
         public void Put()
         {
             // Arrange

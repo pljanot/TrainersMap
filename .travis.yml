@@ -1,6 +1,8 @@
 language: csharp
 solution: TrainersMap.sln
-script:    # the following commands are just examples, use whatever your build process requires
-  - ./build.sh
-  - ./test.sh
-  - grep "Test Results" build.log
+
+install:
+  - nuget install xunit.runners -Version 2.3.1 -OutputDirectory testrunner
+script:
+  - xbuild /p:Configuration=Release solution-name.sln
+  - mono ./testrunner/xunit.runners.2.3.1/tools/xunit.console.clr4.exe ./TrainersMap.Api.Tests/bin/Release/TrainersMap.Api.Tests.dll

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainersMap.Api.Tests", "TrainersMap.Api.Tests\TrainersMap.Api.Tests.csproj", "{E04E6052-4942-4CB2-B610-ACCC658C162C}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainersMap.Client", "TrainersMap.Client\TrainersMap.Client.csproj", "{A69E078A-9423-41FB-A9B6-652C993E7805}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainersMap.RestClient", "TrainersMap.RestClient\TrainersMap.RestClient.csproj", "{564C1F13-700A-45A9-AA7B-D00A09600269}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B177C4F3-9052-4990-BF50-1BF044467C2F}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,5 +43,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {47EDD385-57B4-45BD-B224-FE9474EF5192}
 	EndGlobalSection
 EndGlobal
