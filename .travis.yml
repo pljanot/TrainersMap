@@ -5,4 +5,4 @@ install:
   - nuget restore TrainersMap.sln
 script:
   - msbuild /p:Configuration=Release TrainersMap.sln
-  - mono ./testrunner/xunit.runner.console.2.3.1/tools/xunit.console.exe ./TrainersMap.Api.Tests/bin/Release/TrainersMap.Api.Tests.dll
+  - dotnet xunit ./TrainersMap.Api.Tests/bin/Release/TrainersMap.Api.Tests.dll
