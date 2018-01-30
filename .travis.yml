@@ -1,4 +1,13 @@
 language: csharp
+dist: trusty
+sudo: required
+dotnet: 2.0.0
+
+branches:
+  only:
+    - master
+    - develop
+
 solution: TrainersMap.sln
 install:
   - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
