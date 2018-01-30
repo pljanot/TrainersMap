@@ -1,8 +1,7 @@
 language: csharp
 solution: TrainersMap.sln
 install:
-  - nuget install xunit.runner.console -Version 2.3.1 -OutputDirectory testrunner
   - nuget restore TrainersMap.sln
 script:
   - msbuild /p:Configuration=Release TrainersMap.sln
-  - dotnet xunit ./TrainersMap.Api.Tests/bin/Release/TrainersMap.Api.Tests.dll
+  - mono ./packages/xunit.runners.*/tools/xunit.console.clr4.exe ./TrainersMap.Api.Tests/bin/Release/TrainersMap.Api.Tests.dll
