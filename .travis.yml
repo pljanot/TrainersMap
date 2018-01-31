@@ -12,6 +12,7 @@ solution: TrainersMap.sln
 install:
   - nuget install xunit.runners -Version 1.9.2 -OutputDirectory testrunner
   - nuget restore TrainersMap.sln
+  - dotnet restore
 
 script:
   - msbuild /p:Configuration=Release TrainersMap.sln
